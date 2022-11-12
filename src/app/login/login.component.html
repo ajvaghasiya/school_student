@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div class="loginform">
+    <div class="container">
+      <div class="white_color">
+        <div class="row">
+          <div class="
+                col-xl-6 col-lg-8 col-md-12 col-sm-12
+                offset-xl-3 offset-lg-2
+              ">
+            <form class="login_bg" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+              <div class="titlepage">
+                <h2>Login <strong class="yellow">here</strong></h2>
+              </div>
+              <div class="col-md-12 mb-3">
+                <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    autocomplete="nope"
+                    formControlName="email"
+                    placeholder="Your Email"
+                />
+              </div>
+              <div class="col-md-12 mb-3">
+                <input 
+                    type="password" 
+                    class="form-control" 
+                    placeholder="Your password"
+                    name="password"
+                    formControlName="password"                        
+                >
+              </div>
+              <div class="col-md-12">
+                <button class="send btn-block">Submit</button>
+              </div>
+              <div class="col-md-12 text-center">
+                <a routerLink="/forget-password" class="custom_link">I forgot my password</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>

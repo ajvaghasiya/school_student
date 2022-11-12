@@ -1,0 +1,102 @@
+<app-header></app-header>
+<div class="table_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <div class="white_bg">
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="tabs1" role="tabpanel" aria-labelledby="tabs1-tab">
+                <div class="table-responsive re-custom-table">
+                  <table class="table table-hover table-bordered">
+                    <colgroup>
+                      <col width="20%" />
+                      <col width="20%" />
+                      <col width="20%" />
+                      <col width="20%" />
+                      
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th >Name</th>
+                        <th >Exam Date</th>
+                        <th >Status</th>
+                        <th >Result</th>
+                      </tr>
+                    </thead>
+                    <tbody class="fixbody">
+                      <tr>
+                        <td colspan="4" class="subdrop">
+                          <table id="tabl1" class="table table-bordered one gapcls">
+                            <colgroup>
+                              <col width="20%" />
+                              <col width="20%" />
+                              <col width="20%" />
+                              <col width="20%" />
+                             
+                            </colgroup>
+                            <tbody>
+                              <tr class="mainhead" *ngFor="let listexam of examData; let i = index">
+                                <td >{{listexam.name}}</td>
+                                <td >{{listexam.exam_date}}</td>
+                                <td *ngIf="listexam.status == 1">Active</td>
+                                <td *ngIf="listexam.status == 0">InActive</td>
+                                <td  class="downarrow" (click)="clickSub('one')" >0 <i class="fa fa-arrow-down"></i></td>
+                              </tr>
+                              <tr class="re-hide">
+                                <td colspan="4" class="padd-0">
+                                  <table class="table table-bordered">
+                                    <colgroup>
+                                      <col width="10%" />
+                                      <col width="20%" />
+                                      <col width="20%" />
+                                      <col width="20%" />
+                                      <col width="20%" />
+                                      
+                                    </colgroup>
+                                    <thead>
+                                      <tr>
+                                        <th>ID</th>
+                                        <th>User</th>
+                                        <th>Date</th>
+                                        <th>Reason</th>
+                                        <th>Reason</th>
+                                        <th>Reason</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Signs</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Signs</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>

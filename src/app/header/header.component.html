@@ -1,0 +1,122 @@
+<header>
+<!--     
+    <div class="header-top">
+      <div class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section">
+              <div class="full">
+                <div class="center-desk">
+                  <div class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="#" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-10 col-lg-8 col-md-8 col-sm-9">
+              <div class="header_information">
+               <div class="menu-area">
+                <div class="limit-box">
+                  <nav class="main-menu ">
+                    <ul class="menu-area-main">
+                      <li class="active"> <a href="index.html">Home</a> </li>
+                      <li> <a href="#courses">My Courses </a> </li>
+                      <li> <a href="#about">About</a> </li>
+                      <li> <a href="#learn">My Profile</a> </li>
+                      <li> <a href="#important">Become an Instructor</a> </li>
+                      <li> <a href="#contact">Contact</a> </li>
+                     </ul>
+                   </nav>
+                 </div>
+               </div> 
+               <div class="mean-last">
+                       <a href="#"><img src="assets/images/search_icon.png" alt="#" /></a> <a href="#">login/sing up</a></div>              
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+       -->
+       <div class="header-top">
+        <div class="header">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 logo_section">
+                <div class="full">
+                  <div class="center-desk">
+                    <div class="logo">
+                      <a href="index.html"><img src="assets/images/logo.png" alt="#" /></a>
+                    </div>
+                    <div class="navbar-light">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-10 col-lg-8 col-md-8 col-sm-9">
+                <div class="
+                      header_information
+                      navbar navbar-expand-lg navbar-light
+                    ">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#courses">My Courses </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#learn">My Profile</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" routerLink="/result">Result</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#important">Become an Instructor</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item dropdown" *ngIf="token">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          User
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Profile</a>
+                          <a class="dropdown-item" routerLink="/change-password" href="#">Change Password</a>
+                          <a class="dropdown-item" href="javascript:;" (click)="logout()">Log Out</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a href="javascript:;" class="nav-link login_btn" routerLink="/login" *ngIf="!token">
+                          <i class="fa fa-user"></i><span class="btn-text">login</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end header -->
+      </div>
+ 
+</header>
